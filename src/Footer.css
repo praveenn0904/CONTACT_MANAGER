@@ -1,0 +1,19 @@
+.footer {
+    background-color: #007bff; /* Dark blue for footer background */
+    color: #FFFFFF; /* White text color */
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0px; 
+    width: 100%;
+}
+
+.footer a {
+    color: #CCFFCC; /* Light green for links */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #E6E5E1; /* Light gray for hover effect on links */
+}

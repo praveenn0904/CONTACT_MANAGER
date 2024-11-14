@@ -1,0 +1,99 @@
+/* Home.css */
+
+:root {
+    --dark-blue: #03045E;
+    --light-blue: #00B4D8;
+    --white: #FFFFFF;
+    --light-gray: #F5F7FA;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background: var(--light-gray);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px var(--shadow-color);
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 36px;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.home h2 {
+    font-size: 26px;
+    color: var(--dark-blue);
+    margin: 30px 0 10px;
+    font-weight: 600;
+}
+
+.home p {
+    font-size: 18px;
+    margin: 10px 0 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.home ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.home ul li {
+    background: var(--white);
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid var(--light-blue);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home ul li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.home button {
+    background-color: var(--light-blue);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.home button:hover {
+    background-color: #0077B6;
+}
+
+@media (max-width: 600px) {
+    .home {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .home h1 {
+        font-size: 28px;
+    }
+
+    .home h2 {
+        font-size: 22px;
+    }
+
+    .home p {
+        font-size: 16px;
+    }
+}

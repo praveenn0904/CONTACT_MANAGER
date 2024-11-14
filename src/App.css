@@ -1,0 +1,145 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'TIMES NEW ROMAN', serif;
+}
+.contact-manager-title {
+  color: white; /* White text color */
+  font-size: 24px; /* Adjust font size */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text */
+  width: 100%; /* Ensure it spans the full width */
+  padding: 10px 0; /* Add padding for spacing */
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #FFFFFF; /* White background */
+}
+
+.navbar {
+  background-color: #03045E; /* Dark blue for navbar */
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar ul  {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  color: white; /* White text */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  color: #CCFFCC; /* Light green on hover */
+}
+
+.app-content {
+  flex: 1;
+  margin-top: 60px; /* Adjust margin for navbar height */
+  padding-bottom: 60px; /* Adjust margin for footer height */
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #03045E; /* Dark blue footer */
+  color: #FFFFFF; /* White text */
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #CCFFCC; /* Light green links */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+form {
+  background-color: #FFFFFF; /* White form background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 2px solid #BBBBBB; /* Grey border */
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  background-color: #03045E; /* Dark blue submit button */
+  color: #FFFFFF; /* White text */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #CCFFCC; /* Light green on hover */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th, table td {
+  border: 1px solid #BBBBBB; /* Grey border */
+  padding: 12px;
+  text-align: left;
+}
+
+table th {
+  background-color: #03045E; /* Dark blue for table header */
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #CCFFCC; /* Light green for alternate rows */
+}
+
+table tr:hover {
+  background-color: #FFFFFF; /* White background on hover */
+}
+

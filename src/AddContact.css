@@ -1,0 +1,185 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'TIMES NEW ROMAN', serif;
+}
+
+/* Main Form Container */
+.add-contact {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 63px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: calc(100vh - 140px);
+    overflow-y: auto;
+}
+
+/* Full width for specific fields */
+.add-contact div:nth-child(5),
+.add-contact div:nth-child(10),
+.add-contact div:last-child {
+    grid-column: 1 / -1;
+}
+
+/* Form Item Styling */
+.add-contact div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Styling */
+.add-contact label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #03045E;
+    margin-bottom: 8px;
+}
+
+/* Input and Select Styling */
+.add-contact input,
+.add-contact select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.add-contact input:focus,
+.add-contact select:focus {
+    border-color: #03045E;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(3, 4, 94, 0.1);
+}
+
+.add-contact input[type="date"] {
+    padding: 9px;
+}
+
+.add-contact select {
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Submit Button Styling */
+.add-contact button[type="submit"] {
+    grid-column: 1 / -1;
+    padding: 12px;
+    background-color: #03045E;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.add-contact button[type="submit"]:hover {
+    background-color: #020347;
+}
+
+/* Student Details Section */
+.add-contact .student-details {
+    grid-column: 1 / -1;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* Scrollbar Customization */
+.add-contact::-webkit-scrollbar {
+    width: 8px;
+}
+
+.add-contact::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.add-contact::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.add-contact::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .add-contact {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        gap: 15px;
+        margin: 10px;
+        height: calc(100vh - 100px);
+    }
+
+    .add-contact div:nth-child(5),
+    .add-contact div:nth-child(10),
+    .add-contact div:last-child {
+        grid-column: auto;
+    }
+
+    .add-contact input,
+    .add-contact select {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .add-contact button[type="submit"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Additional Styling for Input Error State */
+.add-contact input.error,
+.add-contact select.error {
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.1);
+}
+
+/* Lightbox Alert Styling for SweetAlert2 */
+.swal2-popup {
+    font-size: 16px !important;
+    border-radius: 8px !important;
+}
+
+/* Disabled Input Styling */
+.add-contact input[disabled] {
+    background-color: #f2f2f2;
+    cursor: not-allowed;
+}
+
+/* Student-specific Inputs Visibility */
+.add-contact .student-fields {
+    display: none;
+}
+
+.add-contact.show-student .student-fields {
+    display: block;
+}
+
+/* Success Message Styling */
+.success-message {
+    color: #2ecc71;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}

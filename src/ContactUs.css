@@ -1,0 +1,33 @@
+/* ContactUs.css */
+
+.contact-us {
+    text-align: center;
+    margin: 150px;
+    color: #03045E; /* Dark blue for text */
+    background-color: #FFFFFF; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    padding: 60px; /* Spacing inside the box */
+    box-shadow: 0 4px 8px rgba(223, 67, 67, 0.2); /* Subtle shadow */
+}
+
+.contact-us h2 {
+    font-size: 36px;
+    color: #03045E; /* Dark blue for header */
+    margin-bottom: 20px;
+}
+
+.contact-us p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #03045E; /* Dark blue for paragraph */
+}
+
+.contact-us a {
+    color: #03045E; /* Dark blue for links */
+    text-decoration: underline; /* Underline for links */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.contact-us a:hover {
+    color: #CCFFCC; /* Light green on hover */
+}
